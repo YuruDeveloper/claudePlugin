@@ -1,10 +1,9 @@
 {
     "name" : "basic",
     "description" : "basic",
-    "version" : "0.0.8",
+    "version" : "0.0.9",
     "author" : {
         "name" : "YuruDeveloper",
         "email" : "vkgkvk8@gmail.com"
-    },
-    "hooks" : "./hooks/hooks.json"
+    }
 }

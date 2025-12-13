@@ -109,11 +109,19 @@ def main() -> int:
 
         # 가이드 내용 읽어서 JSON 형식으로 출력 (Claude가 볼 수 있도록)
         guide_content = read_guide_file(guide_path)
+
+        # stdout에 가이드를 먼저 출력 (Claude에게 전달되도록)
+        print(f"[FILE WRITING GUIDE for {os.path.basename(file_path)}]")
+        print(guide_content)
+        print("[END OF GUIDE]")
+
+        # JSON 출력으로 allow 반환
         output = {
             "hookSpecificOutput": {
                 "hookEventName": "PreToolUse",
                 "permissionDecision": "allow",
-                "permissionDecisionReason": guide_content
+                "permissionDecisionReason": "가이드가 제공되었습니다",
+                "additionalContext": guide_content
             }
         }
         print(json.dumps(output))

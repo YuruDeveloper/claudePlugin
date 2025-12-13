@@ -1,0 +1,17 @@
+{
+    "name" : "YuruDeveloper's Claude Code Marketplace",
+    "owner" : {
+        "name" : "YuruDevloper",
+        "email" : "vkgkvk8@gmail.com"
+    },
+    "metadata" : {
+        "description" : "",
+        "version" : "0.0.1"
+    },
+    "plugins" :[
+        {
+            "name": "basic",
+            "source" : "./plugins/basic" 
+        }
+    ]
+}

@@ -1,18 +1,9 @@
 {
     "name" : "basic",
     "description" : "basic",
-    "version" : "0.0.3",
+    "version" : "0.0.4",
     "author" : {
         "name" : "YuruDeveloper",
         "email" : "vkgkvk8@gmail.com"
-    },
-    "mcpServers" :{
-        "context7": {
-            "command": "npx",
-            "args": [
-                "-y",
-                "@upstash/context7-mcp@latest"
-            ]
-        }
     }
 }

@@ -20,7 +20,16 @@
             ]
           },
           {
-            "matcher": "Write|Edit",
+            "matcher": "Write",
+            "hooks": [
+              {
+                "type": "command",
+                "command": "uv run ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/guidehook.py"
+              }
+            ]
+          },
+          {
+            "matcher": "Edit",
             "hooks": [
               {
                 "type": "command",

@@ -1,5 +1,5 @@
 {
-    "name" : "YuruDeveloper's Claude Code Marketplace",
+    "name" : "YuruDeveloper-Claude-Code-Marketplace",
     "owner" : {
         "name" : "YuruDevloper",
         "email" : "vkgkvk8@gmail.com"
@@ -11,7 +11,10 @@
     "plugins" :[
         {
             "name": "basic",
-            "source" : "./plugins/basic" 
+            "source" : "./plugins/basic",
+            "version" : "0.0.1",
+            "category" : "basic",
+            "keywords" : ["basic"]
         }
     ]
 }

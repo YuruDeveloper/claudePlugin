@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "uv run ${CLAUDE_PLUGIN_DIR}/hooks/scripts/readreview.py"
+            "command": "uv run ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/readreview.py"
           }
         ]
       },
@@ -14,7 +14,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "uv run ${CLAUDE_PLUGIN_DIR}/hooks/scripts/bashreview.py"
+            "command": "uv run ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/bashreview.py"
           }
         ]
       },
@@ -23,7 +23,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "uv run ${CLAUDE_PLUGIN_DIR}/hooks/scripts/guidehook.py"
+            "command": "uv run ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/guidehook.py"
           }
         ]
       }
@@ -34,7 +34,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "uv run ${CLAUDE_PLUGIN_DIR}/hooks/scripts/toollog.py"
+            "command": "uv run ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/toollog.py"
           }
         ]
       }

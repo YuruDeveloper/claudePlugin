@@ -24,7 +24,7 @@
             "hooks": [
               {
                 "type": "command",
-                "command": "uv run ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/guidehook.py"
+                "command": "cat ${CLAUDE_PLUGIN_ROOT}/md/guide/code-guide.md"
               }
             ]
           },

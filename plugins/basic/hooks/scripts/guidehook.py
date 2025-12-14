@@ -115,7 +115,7 @@ def main() -> int:
             "hookSpecificOutput": {
                 "hookEventName": "PreToolUse",
                 "permissionDecision": "allow",
-                "permissionDecisionReason": guide_content
+                "additionalContext": guide_content
             }
         }
         print(json.dumps(output))

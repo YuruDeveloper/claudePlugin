@@ -9,6 +9,7 @@ allowed-tools:
   - WebSearch
   - WebFetch
   - Bash
+model: haiku 
 ---
 
 # Library Selector Agent

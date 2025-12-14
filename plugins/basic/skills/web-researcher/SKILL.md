@@ -11,6 +11,7 @@ allowed-tools:
   - WebSearch
   - WebFetch
   - Bash
+model: haiku 
 ---
 
 # Web Researcher Agent

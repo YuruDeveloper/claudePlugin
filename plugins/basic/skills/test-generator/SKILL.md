@@ -10,6 +10,7 @@ allowed-tools:
   - Grep
   - Glob
   - Bash
+ model: sonnet 
 ---
 
 # Test Generator Agent

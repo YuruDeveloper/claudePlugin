@@ -10,6 +10,7 @@ allowed-tools:
   - Read
   - Glob
   - Bash
+model: haiku 
 ---
 
 # Project Initializer Agent

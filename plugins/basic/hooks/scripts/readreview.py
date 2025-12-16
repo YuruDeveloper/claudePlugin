@@ -66,7 +66,7 @@ def main() -> int:
 
         # 민감한 파일 검사
         if is_sensitive_file(file_path):
-            print("BLOCK: 민감한 설정 파일은 읽을 수 없습니다", file=sys.stderr)
+            print("BLOCK: Sensitive configuration files cannot be read", file=sys.stderr)
             return 2
 
         return 0

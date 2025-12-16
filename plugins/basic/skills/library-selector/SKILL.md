@@ -1,15 +1,16 @@
 ---
 name: library-selector
 description: |
-  Library selection specialist. Auto-activate when:
-  - "which library", "recommend", "best library"
-  - "A vs B", "compare", "difference"
-  - Package/dependency decisions
+  Library comparison and recommendation skill. Auto-activate when:
+  - "which library", "recommend library"
+  - "A vs B", "compare libraries"
+  - Package selection decisions
+  Returns structured comparison with pros/cons.
 allowed-tools:
   - WebSearch
   - WebFetch
   - Bash
-model: haiku 
+model: haiku
 ---
 
 # Library Selector Agent

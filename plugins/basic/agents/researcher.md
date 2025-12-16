@@ -1,6 +1,11 @@
 ---
 name: researcher
-description: Clarifies research objectives, uses WebSearch to find relevant sources, extracts detailed information with WebFetch, analyzes and cross-references findings, and synthesizes into actionable insights.
+description: |
+  Deep research agent for comprehensive investigation. Use via Task tool when:
+  - Multi-source verification needed
+  - Academic/technical deep dive required
+  - Complex topic requiring synthesis
+  NOTE: For quick searches, use web-researcher skill instead.
 tools: Skill, WebSearch, WebFetch, Bash
 model: haiku
 ---

@@ -1,6 +1,11 @@
 ---
 name: tester
-description: Analyzes code to be tested, identifies testable units and interfaces, designs test cases covering edge cases, writes tests using appropriate frameworks, and runs tests to report results.
+description: |
+  Test implementation agent that writes and executes tests. Use via Task tool when:
+  - Actual test file creation needed
+  - Running tests and fixing failures
+  - Full test coverage implementation
+  NOTE: For test planning only, use test-generator skill instead.
 tools: Skill, Read, Write, Edit, Bash, Glob, Grep
 model: haiku
 ---

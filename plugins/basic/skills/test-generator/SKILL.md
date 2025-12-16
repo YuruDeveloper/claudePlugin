@@ -1,16 +1,17 @@
 ---
 name: test-generator
 description: |
-  Test generation specialist. Auto-activate when:
-  - "write tests", "generate tests", "add tests"
-  - "test this", "unit test", "test cases"
-  - "coverage", "missing tests"
+  Test planning skill for designing test cases. Auto-activate when:
+  - "plan tests", "design test cases"
+  - "what tests needed", "test strategy"
+  - "identify test scenarios"
+  NOTE: For actual test implementation, use tester agent via Task tool.
 allowed-tools:
   - Read
   - Grep
   - Glob
   - Bash
- model: sonnet 
+model: sonnet
 ---
 
 # Test Generator Agent

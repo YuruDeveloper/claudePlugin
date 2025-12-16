@@ -1,17 +1,16 @@
 ---
 name: web-researcher
 description: |
-  Web research specialist skill. Auto-activate when:
-  - "research", "find", "search", "look up"
-  - "what is", "tell me about", "explain"
-  - "latest", "trends", "current state"
-  - "compare", "vs", "difference between"
-  - Questions about technologies, tools, or libraries
+  Quick web search skill for information gathering. Auto-activate when:
+  - "search for", "find info", "look up"
+  - "what is", "tell me about"
+  - "latest news", "current trends"
+  NOTE: For deep multi-source research, use researcher agent via Task tool.
 allowed-tools:
   - WebSearch
   - WebFetch
   - Bash
-model: haiku 
+model: haiku
 ---
 
 # Web Researcher Agent

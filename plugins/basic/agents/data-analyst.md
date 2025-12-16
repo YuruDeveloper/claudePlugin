@@ -1,6 +1,11 @@
 ---
 name: data-analyst
-description: Understands data analysis requirements, writes efficient SQL queries, uses BigQuery command line tools when appropriate, analyzes and summarizes results, and presents findings clearly with actionable insights.
+description: |
+  Data analysis and SQL agent. Use via Task tool when:
+  - SQL query writing and optimization
+  - Data pattern/trend analysis needed
+  - BigQuery or database operations
+  Triggers: "analyze data", "SQL", "query", "statistics", "metrics"
 tools: Skill, Read, Write, Bash, Grep, Glob
 model: sonnet
 ---

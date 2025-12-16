@@ -1,6 +1,11 @@
 ---
 name: code-reviewer
-description: Runs git diff to see recent changes, focuses on modified files, and begins comprehensive code review immediately for quality, security, and maintainability.
+description: |
+  Comprehensive code review agent. Use via Task tool when:
+  - PR/commit review with git diff analysis
+  - Security and quality audit needed
+  - Detailed feedback with fix suggestions required
+  Triggers: "review", "PR review", "check code quality"
 tools: Read, Grep, Glob, Skill, AskUserQuestion, Bash, mcp__plugin_basic_context7__*
 model: sonnet
 ---

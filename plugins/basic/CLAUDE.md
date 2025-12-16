@@ -5,7 +5,6 @@
             - When you need library documentation or API references
             - When searching for official code examples
             - When verifying syntax or best practices
-            - When resolving confusion about implementation details
         </when_to_use>
         <note>Query this server before making assumptions about library usage</note>
     </context7>
@@ -15,79 +14,76 @@
             - When you need to interact with web pages
             - When testing web applications
             - When capturing screenshots or snapshots
-            - When automating browser tasks
         </when_to_use>
         <note>Use browser_snapshot for actions, browser_take_screenshot for visual capture</note>
     </playwright>
 </MCP_SERVER>
 
 <SKILLS>
-    <web-researcher>
-        <purpose>Web research and information gathering</purpose>
-        <trigger>research, find, search, compare, vs, trends, latest</trigger>
-        <output>toon format with summary, purpose, detail[n], downloadedfile[n]</output>
+    Skills are auto-activated for quick, lightweight tasks.
+
+    <web-researcher model="haiku">
+        <purpose>Quick web search and information lookup</purpose>
+        <trigger>"search for", "find info", "what is", "latest news"</trigger>
+        <note>For deep research, use researcher agent instead</note>
     </web-researcher>
-    <library-selector>
+    <library-selector model="haiku">
         <purpose>Library comparison and recommendation</purpose>
-        <trigger>which library, recommend, best library, A vs B</trigger>
-        <output>toon format with summary, recommendation, candidates[n]</output>
+        <trigger>"which library", "recommend library", "A vs B"</trigger>
     </library-selector>
-    <code-reviewer>
-        <purpose>Code review and issue identification</purpose>
-        <trigger>review code, check my code, PR review, any issues</trigger>
-        <output>toon format with summary, status, issues[n]</output>
-    </code-reviewer>
-    <test-generator>
-        <purpose>Test case generation and planning</purpose>
-        <trigger>write tests, generate tests, unit test, coverage</trigger>
-        <output>toon format with summary, framework, testCases[n]</output>
+    <test-generator model="sonnet">
+        <purpose>Test case planning and design (planning only)</purpose>
+        <trigger>"plan tests", "design test cases", "test strategy"</trigger>
+        <note>For actual test implementation, use tester agent instead</note>
     </test-generator>
-    <init-projecter>
+    <init-projecter model="haiku">
         <purpose>Project initialization planning</purpose>
-        <trigger>create project, init project, setup, boilerplate</trigger>
-        <output>toon format with summary, techStack, structure[n], files[n]</output>
+        <trigger>"create project", "init project", "setup", "boilerplate"</trigger>
+        <note>Returns plan only, does NOT create files</note>
     </init-projecter>
 </SKILLS>
 
 <AGENTS>
+    Agents are invoked via Task tool for complex, multi-step tasks.
+
     <planner model="opus">
-        <purpose>Complex implementation planning and architecture design</purpose>
-        <trigger>plan, design, architecture, how to implement, strategy</trigger>
-        <output>toon format</output>
+        <purpose>Architecture design and implementation planning</purpose>
+        <trigger>"plan", "design", "architecture", "how to implement"</trigger>
+        <tools>Read, Glob, Grep, Skill, context7</tools>
     </planner>
     <researcher model="haiku">
-        <purpose>Web research and information gathering</purpose>
-        <trigger>research, find, search, investigate, look up</trigger>
-        <output>toon format</output>
+        <purpose>Deep multi-source research and synthesis</purpose>
+        <trigger>"research deeply", "investigate", "comprehensive analysis"</trigger>
+        <tools>Skill, WebSearch, WebFetch, Bash</tools>
     </researcher>
-    <debugger model="sonnet">
-        <purpose>Bug analysis and debugging support</purpose>
-        <trigger>debug, error, bug, fix, not working, fails</trigger>
-        <output>toon format</output>
-    </debugger>
     <code-reviewer model="sonnet">
-        <purpose>Code review and quality inspection</purpose>
-        <trigger>review, check code, PR review, code quality, any issues</trigger>
-        <output>toon format</output>
+        <purpose>Comprehensive code review with git diff analysis</purpose>
+        <trigger>"review", "PR review", "check code quality"</trigger>
+        <tools>Read, Grep, Glob, Skill, AskUserQuestion, Bash, context7</tools>
     </code-reviewer>
+    <debugger model="sonnet">
+        <purpose>Bug analysis, root cause identification, and fix</purpose>
+        <trigger>"debug", "error", "bug", "fix", "not working"</trigger>
+        <tools>Read, Edit, Skill, Grep, Glob, Bash</tools>
+    </debugger>
+    <tester model="haiku">
+        <purpose>Test implementation and execution</purpose>
+        <trigger>"write tests", "run tests", "implement tests"</trigger>
+        <tools>Skill, Read, Write, Edit, Bash, Glob, Grep</tools>
+    </tester>
     <documentater model="haiku">
-        <purpose>Documentation writing and comment generation</purpose>
-        <trigger>document, write docs, README, API docs, comments, explain</trigger>
-        <output>toon format</output>
+        <purpose>Documentation and README writing</purpose>
+        <trigger>"document", "write docs", "README", "explain code"</trigger>
+        <tools>Read, Write, Edit, Grep, Glob</tools>
     </documentater>
     <optimizer model="sonnet">
-        <purpose>Performance analysis and optimization</purpose>
-        <trigger>optimize, improve performance, speed up, slow, efficient, memory</trigger>
-        <output>toon format</output>
+        <purpose>Performance profiling and optimization</purpose>
+        <trigger>"optimize", "performance", "speed up", "slow", "memory"</trigger>
+        <tools>Read, Edit, Skill, Grep, Glob, Bash</tools>
     </optimizer>
-    <tester model="haiku">
-        <purpose>Test case generation and execution</purpose>
-        <trigger>test, write tests, unit test, integration test, coverage</trigger>
-        <output>toon format</output>
-    </tester>
     <data-analyst model="sonnet">
-        <purpose>Data analysis and insights extraction</purpose>
-        <trigger>analyze, statistics, trends, patterns, data insights, metrics</trigger>
-        <output>toon format</output>
+        <purpose>SQL queries and data analysis</purpose>
+        <trigger>"analyze data", "SQL", "query", "statistics", "metrics"</trigger>
+        <tools>Skill, Read, Write, Bash, Grep, Glob</tools>
     </data-analyst>
 </AGENTS>

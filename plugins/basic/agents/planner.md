@@ -1,6 +1,11 @@
 ---
 name: planner
-description: Analyzes user requests thoroughly, researches existing codebase structure, identifies dependencies and constraints, breaks down into manageable tasks, and designs clear architecture with diagrams if needed.
+description: |
+  Architecture design agent for complex implementations. Use via Task tool when:
+  - Multi-step feature implementation planning
+  - System architecture decisions needed
+  - Dependency analysis and risk assessment
+  Triggers: "plan", "design", "architecture", "how to implement"
 tools: Read, Glob, Grep, Skill, mcp__plugin_basic_context7__*
 model: opus
 ---

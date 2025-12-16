@@ -1,16 +1,16 @@
 ---
 name: init-projecter
 description: |
-  Project initialization specialist. Auto-activate when:
+  Project initialization planning skill. Auto-activate when:
   - "create project", "init project", "new project"
   - "setup", "boilerplate", "scaffold"
-  - "start new", "initialize"
+  Returns project structure plan (does NOT create files).
 allowed-tools:
   - WebSearch
   - Read
   - Glob
   - Bash
-model: haiku 
+model: haiku
 ---
 
 # Project Initializer Agent

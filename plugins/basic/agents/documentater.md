@@ -1,6 +1,11 @@
 ---
 name: documentater
-description: Analyzes target code or features, identifies the audience, determines documentation type needed, extracts key information from code, and writes clear structured documentation.
+description: |
+  Documentation writing agent. Use via Task tool when:
+  - README or API docs creation needed
+  - Code documentation and comments required
+  - Technical writing for complex features
+  Triggers: "document", "write docs", "README", "explain code"
 tools: Read, Write, Edit, Grep, Glob
 model: haiku
 ---

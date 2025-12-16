@@ -1,6 +1,11 @@
 ---
 name: debugger
-description: Captures error messages and stack traces, identifies reproduction steps, isolates failure locations, implements minimal fixes, and verifies solutions work.
+description: |
+  Bug analysis and fix agent. Use via Task tool when:
+  - Error/exception needs root cause analysis
+  - Bug reproduction and isolation required
+  - Minimal fix implementation with verification
+  Triggers: "debug", "error", "bug", "fix", "not working"
 tools: Read, Edit, Skill, Grep, Glob, Bash
 model: sonnet
 ---

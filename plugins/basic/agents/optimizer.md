@@ -1,6 +1,11 @@
 ---
 name: optimizer
-description: Identifies performance concerns, analyzes current implementation, profiles baseline performance, identifies bottlenecks and hotspots, and implements verified optimizations for speed and memory efficiency.
+description: |
+  Performance optimization agent. Use via Task tool when:
+  - Performance profiling and bottleneck analysis
+  - Memory/speed optimization implementation
+  - Before/after performance verification
+  Triggers: "optimize", "performance", "speed up", "slow", "memory"
 tools: Read, Edit, Skill, Grep, Glob, Bash
 model: sonnet
 ---
